@@ -90,7 +90,7 @@ INFERENCE_SCRIPT="$PROJECT_ROOT/model/test_tissue_air.py"
 BONE_INFERENCE_SCRIPT="$PROJECT_ROOT/model/test_bone.py"
 POSTPROCESSING_SCRIPT="$PROJECT_ROOT/postprocessing/generate_results.py"
 MAP_BACK_SCRIPT="$PROJECT_ROOT/postprocessing/map_results_to_original.py"
-EARDRUM_SCRIPT="$(dirname "$PROJECT_ROOT")/pre-processing-eardrum.py"
+EARDRUM_SCRIPT="$PROJECT_ROOT/preprocessing/pre-processing-eardrum.py"
 METRIC_EXTRACTION_SCRIPT="$PROJECT_ROOT/metric_extraction/run_pipeline.py"
 
 # Derived paths
