@@ -22,6 +22,9 @@ TEST_DIR = "/projects/oticon/erhdata/Processed-Data/SBEO/Final_pipeline/Output/T
 MODEL_PATH_TEMPLATE = "/projects/oticon/erhdata/Processed-Data/SBEO/Final_pipeline/Logs/{}/best_model.pth"
 OUTPUT_PREDICTIONS_DIR_TEMPLATE = "/projects/oticon/erhdata/Processed-Data/SBEO/Final_pipeline/Logs/{}/test_predictions"
 
+# When False, skip scans whose tissue/air prediction already exists
+overwrite = True
+
 NUM_LANDMARKS = 7  # Number of heatmap channels
 LANDMARK_IDS = [1, 2, 3, 4, 5, 6, 7]  # Landmark IDs
 
@@ -366,6 +369,14 @@ def run_inference_single_model(run_name, architecture_type, base_features, seg_c
         for ct_file in tqdm(ct_files, desc="Processing test scans"):
             try:
                 ct_path = os.path.join(TEST_DIR, ct_file)
+
+                # Skip if already predicted (unless overwrite)
+                if not overwrite:
+                    _clean = strip_nnunet_suffix(ct_file)
+                    _seg_name = (_clean[:-7] if _clean.endswith('.nii.gz') else _clean[:-4]) + '_pred_seg.nii.gz'
+                    if os.path.isfile(os.path.join(output_dir, _seg_name)):
+                        print(f"  SKIPPING {ct_file} (prediction already exists)")
+                        continue
                 
                 # Preprocess CT
                 image_tensor, affine, original_shape, image_normalized = preprocess_ct(ct_path)
@@ -556,6 +567,8 @@ def parse_arguments():
                         help='Template path for output predictions, with {} for run name (overrides OUTPUT_PREDICTIONS_DIR_TEMPLATE)')
     parser.add_argument('--run_names', type=str, nargs='+', default=None,
                         help='Run name(s) to evaluate. If provided, only matching models from MODEL_CONFIGS will run.')
+    parser.add_argument('--overwrite', type=str, default='True', choices=['True', 'False'],
+                        help='If False, skip scans whose prediction already exists')
     return parser.parse_args()
 
 
@@ -572,4 +585,5 @@ if __name__ == "__main__":
         if not MODEL_CONFIGS:
             print(f"ERROR: No matching model configs found for run names: {args.run_names}")
             exit(1)
+    overwrite = (args.overwrite == 'True')
     run_inference()

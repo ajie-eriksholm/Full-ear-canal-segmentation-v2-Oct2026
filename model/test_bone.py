@@ -35,7 +35,8 @@ def get_default_device():
 def run_nnunet_predict(input_dir, output_dir, dataset_id=1, configuration="3d_fullres",
                        folds=None, checkpoint="checkpoint_best.pth", device=None,
                        trainer=None, plans=None,
-                       nnunet_raw=None, nnunet_preprocessed=None, nnunet_results=None):
+                       nnunet_raw=None, nnunet_preprocessed=None, nnunet_results=None,
+                       overwrite=True):
     """
     Run nnU-Net prediction.
 
@@ -83,6 +84,9 @@ def run_nnunet_predict(input_dir, output_dir, dataset_id=1, configuration="3d_fu
         cmd.extend(["-tr", trainer])
     if plans:
         cmd.extend(["-p", plans])
+    if not overwrite:
+        # nnU-Net skips cases whose prediction already exists
+        cmd.append("--continue_prediction")
 
     os.makedirs(output_dir, exist_ok=True)
 
@@ -156,6 +160,8 @@ def parse_arguments():
                         help="Override nnUNet_preprocessed environment variable")
     parser.add_argument("--nnunet_results", default=None,
                         help="Override nnUNet_results environment variable")
+    parser.add_argument("--overwrite", default="True", choices=["True", "False"],
+                        help="If False, skip cases whose bone prediction already exists")
     return parser.parse_args()
 
 
@@ -174,4 +180,5 @@ if __name__ == "__main__":
         nnunet_raw=args.nnunet_raw,
         nnunet_preprocessed=args.nnunet_preprocessed,
         nnunet_results=args.nnunet_results,
+        overwrite=(args.overwrite == 'True'),
     )

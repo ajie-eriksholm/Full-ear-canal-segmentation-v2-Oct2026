@@ -40,6 +40,9 @@ reference_grid_dir = ""
 # so "LPS" (negate x,y) makes STL, markups and the NIfTI masks overlay in Slicer.
 output_coordinate_system = "LPS"
 
+# When False, skip patients/cases whose result already exists (do not overwrite)
+overwrite = True
+
 # Label mapping for landmarks 1-7 (from predicted_landmark_coordinates.csv)
 CANAL_LABELS = {
     1: "Cartilaginous Canal Point",
@@ -314,6 +317,12 @@ def process_bone_masks():
             continue
         base = f"{patient}_{ear_side}"
 
+        # Skip if already generated (unless overwrite): bone mask + STL present
+        if not overwrite and os.path.isfile(os.path.join(output_dir_masks_bone, f"{base}.nii.gz")) \
+                and os.path.isfile(os.path.join(output_dir_stl_bone, f"{base}.stl")):
+            print(f"  SKIPPING bone mask {base} (already exists)")
+            continue
+
         nii = load_bone_prediction(os.path.join(bone_masks_dir, fname), patient, ear_side)
         data = np.asanyarray(nii.dataobj).astype(np.int16)
 
@@ -352,6 +361,12 @@ def process_masks():
     for mask_file in mask_files:
         base_name = get_pred_seg_base_name(mask_file)
         mask_path = os.path.join(masks_dir, mask_file)
+
+        # Skip if already generated (unless overwrite): mask + STL present
+        if not overwrite and os.path.isfile(os.path.join(output_dir_masks, f"{base_name}.nii.gz")) \
+                and os.path.isfile(os.path.join(output_dir_stl, f"{base_name}.stl")):
+            print(f"  SKIPPING mask {base_name} (already exists)")
+            continue
 
         # Load NIfTI mask
         nii = nib.load(mask_path)
@@ -477,6 +492,11 @@ def main():
     processed = set()
 
     for (patient, ear_side), canal_group in pred_grouped:
+        # Skip if already generated (unless overwrite): markup JSON present
+        if not overwrite and os.path.isfile(os.path.join(active_markups_dir, f"{patient}_{ear_side}.json")):
+            print(f"  SKIPPING markups {patient}_{ear_side} (already exists)")
+            continue
+
         landmarks = []
 
         # Add canal landmarks 1-7
@@ -589,6 +609,8 @@ def parse_arguments():
                         help='If True, also export landmarks as 3D Slicer fiducial markups (.mrk.json)')
     parser.add_argument('--output_dir_slicer_markups', type=str, default=None,
                         help='Output directory for 3D Slicer markups (defaults to the markups directory)')
+    parser.add_argument('--overwrite', type=str, default='True', choices=['True', 'False'],
+                        help='If False, skip patients/cases whose result already exists')
     return parser.parse_args()
 
 
@@ -622,4 +644,6 @@ if __name__ == "__main__":
         export_slicer_markups = args.export_slicer_markups == 'True'
     if args.output_dir_slicer_markups is not None:
         output_dir_slicer_markups = args.output_dir_slicer_markups
+    if args.overwrite is not None:
+        overwrite = (args.overwrite == 'True')
     main()

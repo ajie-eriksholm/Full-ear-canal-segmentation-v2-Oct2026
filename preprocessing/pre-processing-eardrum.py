@@ -443,11 +443,6 @@ def build_reference_frames(cropped_data, cropped_affine, patient_output_dir, pat
     lowres_affine = local_affine.copy()
     for i in range(3):
         lowres_affine[i, i] *= padded_data.shape[i] / LOWRES_FINAL_SHAPE[i]
-    # Persist the 256^3 detection volume so no_eyes head_muscles is segmented on the
-    # SAME grid the landmarks come from (matches P2; the 0.5mm local frame gave a
-    # finer muscle mask whose top points broke the QA check for borderline scans).
-    lowres_path = os.path.join(tmp_dir, f"{patient_id}_lowres_256.nii.gz")
-    nib.save(nib.Nifti1Image(lowres_data.astype(np.float32), lowres_affine), lowres_path)
 
     # --- High-resolution working volume (this is what gets cropped/saved) ---
     # The affine is cheap and always computed; the huge data array is only built
@@ -779,7 +774,7 @@ def compute_alignment(landmark_locations_world, lowres_data, device, no_eyes, pa
         print("  No-eyes mode: segmenting head muscles for Frankfort plane...")
         muscles_path = os.path.join(patient_output_dir, f"{patient_id}_head_muscles_segmented.nii.gz")
         seg_img, muscles_path = run_totalsegmentator(
-            os.path.join(patient_output_dir, "_tmp", f"{patient_id}_lowres_256.nii.gz"),
+            os.path.join(patient_output_dir, "_tmp", f"{patient_id}_local_frame_oriented.nii.gz"),
             'head_muscles', device, muscles_path,
         )
         seg_data = seg_img.get_fdata()

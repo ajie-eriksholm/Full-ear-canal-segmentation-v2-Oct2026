@@ -24,6 +24,7 @@ excluded_scans_csv= r"/projects/oticon/erhdata/Processed-Data/SBEO/High-quality-
 
 no_eyes = False
 skip_alignment = False 
+overwrite = True  # when False, skip scans whose P3 cropped ears already exist
 # Landmark configuration
 landmark_ids = [8, 9, 10, 11, 12, 13]
 
@@ -260,6 +261,16 @@ def process_scans():
             print(f"SKIPPING: {scan_name} (in excluded scans list)")
             print(f"{'='*60}")
             continue
+
+        # Skip if already processed (unless overwrite): both cropped ears present
+        if not overwrite:
+            _r = os.path.join(final_cropped_ears_dir, f"{scan_name}_right_ear.nii.gz")
+            _l = os.path.join(final_cropped_ears_dir, f"{scan_name}_left_ear.nii.gz")
+            if os.path.isfile(_r) and os.path.isfile(_l):
+                print(f"\n{'='*60}")
+                print(f"SKIPPING: {scan_name} (P3 output already exists)")
+                print(f"{'='*60}")
+                continue
         
         print(f"\n{'='*60}")
         print(f"Processing: {scan_name}")
@@ -546,6 +557,9 @@ def parse_arguments():
     parser.add_argument('--skip_alignment', type=str, default='False',
                         choices=['True', 'False'],
                         help='Skip alignment mode (must match P2 setting)')
+    parser.add_argument('--overwrite', type=str, default='True',
+                        choices=['True', 'False'],
+                        help='If False, skip scans whose P3 cropped ears already exist')
     
     return parser.parse_args()
 
@@ -560,6 +574,7 @@ if __name__ == "__main__":
     excluded_scans_csv = args.excluded_scans_csv
     no_eyes = (args.no_eyes == 'True')
     skip_alignment = (args.skip_alignment == 'True')
+    overwrite = (args.overwrite == 'True')
     
     # Update derived paths
     Processed_data_output_dir = Processed_scans_dir

@@ -19,6 +19,9 @@ TARGET_SHAPE = (128, 128, 128)
 MIN_HU = -1000
 MAX_HU = 2007
 
+# When False, skip participants whose P4 normalized ears already exist
+overwrite = True
+
 NIFTI_EXTENSIONS = ('.nii.gz', '.nii')
 
 
@@ -163,6 +166,16 @@ def process_all_participants():
         # Extract patient ID (folder name)
         patient_id = participant_folder
         
+        # Skip if already processed (unless overwrite): both normalized ears present
+        if not overwrite:
+            _l = os.path.join(OUTPUT_DATA_DIR, f"{patient_id}_left_0000.nii.gz")
+            _r = os.path.join(OUTPUT_DATA_DIR, f"{patient_id}_right_0000.nii.gz")
+            if os.path.isfile(_l) and os.path.isfile(_r):
+                print(f"\n{'='*80}")
+                print(f"SKIPPING: {patient_id} (P4 output already exists)")
+                print(f"{'='*80}")
+                continue
+        
         print(f"\n{'='*80}")
         print(f"Participant: {patient_id}")
         print(f"{'='*80}")
@@ -225,6 +238,9 @@ def parse_arguments():
     parser.add_argument('--output_dir', type=str,
                         default=r"/projects/oticon/erhdata/Processed-Data/SBEO/High-quality-scans/Output",
                         help='Base output directory')
+    parser.add_argument('--overwrite', type=str, default='True',
+                        choices=['True', 'False'],
+                        help='If False, skip participants whose P4 normalized ears already exist')
     
     return parser.parse_args()
 
@@ -236,5 +252,6 @@ if __name__ == "__main__":
     # Update global variables with command-line arguments
     PROCESS_DATA_DIR = args.processed_scans_dir
     OUTPUT_DATA_DIR = os.path.join(args.output_dir, "Preprocessing", "P4_Normalized_Ears")
+    overwrite = (args.overwrite == 'True')
     
     process_all_participants()
