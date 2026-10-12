@@ -1,0 +1,387 @@
+Scan,quality,comment,PatientID,Gender,Age,CenterID,categories
+CHUM-001___soft_tissue_mask.nii.gz,good,,CHUM-001,1,82.0,1,
+CHUM-006___soft_tissue_mask.nii.gz,good,,CHUM-006,1,65.0,1,
+CHUM-011___soft_tissue_mask.nii.gz,good,,CHUM-011,1,61.0,1,
+CHUM-012___soft_tissue_mask.nii.gz,good,,CHUM-012,1,61.0,1,
+CHUM-016___soft_tissue_mask.nii.gz,good,,CHUM-016,1,58.0,1,
+CHUM-022___soft_tissue_mask.nii.gz,good,,CHUM-022,1,56.0,1,
+CHUM-023___soft_tissue_mask.nii.gz,good,,CHUM-023,0,65.0,1,
+CHUM-030___soft_tissue_mask.nii.gz,good,,CHUM-030,1,68.0,1,
+CHUM-034___soft_tissue_mask.nii.gz,good,,CHUM-034,1,49.0,1,
+CHUM-036___soft_tissue_mask.nii.gz,good,,CHUM-036,1,51.0,1,
+CHUM-037___soft_tissue_mask.nii.gz,good,,CHUM-037,0,70.0,1,
+CHUM-039___soft_tissue_mask.nii.gz,good,,CHUM-039,1,61.0,1,
+CHUM-042___soft_tissue_mask.nii.gz,good,,CHUM-042,1,60.0,1,
+CHUM-044___soft_tissue_mask.nii.gz,good,,CHUM-044,0,44.0,1,
+CHUM-045___soft_tissue_mask.nii.gz,good,,CHUM-045,1,50.0,1,
+CHUM-046___soft_tissue_mask.nii.gz,good,,CHUM-046,0,64.0,1,
+CHUM-047___soft_tissue_mask.nii.gz,good,,CHUM-047,0,51.0,1,
+CHUM-048___soft_tissue_mask.nii.gz,good,,CHUM-048,1,90.0,1,
+CHUM-049___soft_tissue_mask.nii.gz,good,,CHUM-049,1,69.0,1,
+CHUM-050___soft_tissue_mask.nii.gz,good,,CHUM-050,1,71.0,1,
+CHUM-053___soft_tissue_mask.nii.gz,good,,CHUM-053,0,62.0,1,
+CHUM-055___soft_tissue_mask.nii.gz,good,,CHUM-055,0,65.0,1,
+CHUM-056___soft_tissue_mask.nii.gz,good,,CHUM-056,1,57.0,1,
+CHUM-057___soft_tissue_mask.nii.gz,good,,CHUM-057,1,71.0,1,
+CHUM-058___soft_tissue_mask.nii.gz,good,,CHUM-058,0,60.0,1,
+CHUM-059___soft_tissue_mask.nii.gz,good,,CHUM-059,1,66.0,1,
+CHUM-062___soft_tissue_mask.nii.gz,good,,CHUM-062,1,72.0,1,
+CHUM-064___soft_tissue_mask.nii.gz,good,,CHUM-064,1,73.0,1,
+CHUP-001___soft_tissue_mask.nii.gz,good,,CHUP-001,0,56.0,2,
+CHUP-002___soft_tissue_mask.nii.gz,good,,CHUP-002,1,58.0,2,
+CHUP-003___soft_tissue_mask.nii.gz,good,,CHUP-003,1,60.0,2,
+CHUP-004___soft_tissue_mask.nii.gz,good,,CHUP-004,1,58.0,2,
+CHUP-006___soft_tissue_mask.nii.gz,good,,CHUP-006,1,72.0,2,
+CHUP-007___soft_tissue_mask.nii.gz,good,,CHUP-007,1,61.0,2,
+CHUP-008___soft_tissue_mask.nii.gz,good,,CHUP-008,0,59.0,2,
+CHUP-010___soft_tissue_mask.nii.gz,good,,CHUP-010,1,71.0,2,
+CHUP-011___soft_tissue_mask.nii.gz,good,,CHUP-011,1,76.0,2,
+CHUP-012___soft_tissue_mask.nii.gz,good,,CHUP-012,0,53.0,2,
+CHUP-017___soft_tissue_mask.nii.gz,good,,CHUP-017,1,81.0,2,
+CHUP-018___soft_tissue_mask.nii.gz,good,,CHUP-018,1,53.0,2,
+CHUP-022___soft_tissue_mask.nii.gz,good,,CHUP-022,1,69.0,2,
+CHUP-023___soft_tissue_mask.nii.gz,good,,CHUP-023,0,65.0,2,
+CHUP-025___soft_tissue_mask.nii.gz,good,,CHUP-025,1,63.0,2,
+CHUP-026___soft_tissue_mask.nii.gz,good,,CHUP-026,1,46.0,2,
+CHUP-029___soft_tissue_mask.nii.gz,good,,CHUP-029,1,60.0,2,
+CHUP-030___soft_tissue_mask.nii.gz,good,,CHUP-030,1,58.0,2,
+CHUP-032___soft_tissue_mask.nii.gz,good,,CHUP-032,1,68.0,2,
+CHUP-033___soft_tissue_mask.nii.gz,good,,CHUP-033,1,73.0,2,
+CHUP-034___soft_tissue_mask.nii.gz,good,,CHUP-034,1,55.0,2,
+CHUP-037___soft_tissue_mask.nii.gz,good,,CHUP-037,1,54.0,2,
+CHUP-039___soft_tissue_mask.nii.gz,good,,CHUP-039,1,57.0,2,
+CHUP-040___soft_tissue_mask.nii.gz,good,,CHUP-040,1,65.0,2,
+CHUP-043___soft_tissue_mask.nii.gz,good,,CHUP-043,0,54.0,2,
+CHUP-044___soft_tissue_mask.nii.gz,good,,CHUP-044,1,56.0,2,
+CHUP-046___soft_tissue_mask.nii.gz,good,,CHUP-046,1,65.0,2,
+CHUP-047___soft_tissue_mask.nii.gz,good,,CHUP-047,1,62.0,2,
+CHUP-049___soft_tissue_mask.nii.gz,good,,CHUP-049,1,62.0,2,
+CHUP-050___soft_tissue_mask.nii.gz,good,,CHUP-050,1,54.0,2,
+CHUP-053___soft_tissue_mask.nii.gz,good,,CHUP-053,1,59.0,2,
+CHUP-054___soft_tissue_mask.nii.gz,good,,CHUP-054,0,70.0,2,
+CHUP-056___soft_tissue_mask.nii.gz,good,,CHUP-056,1,52.0,2,
+CHUP-057___soft_tissue_mask.nii.gz,good,,CHUP-057,1,63.0,2,
+CHUP-062___soft_tissue_mask.nii.gz,good,,CHUP-062,1,61.0,2,
+CHUP-063___soft_tissue_mask.nii.gz,good,,CHUP-063,1,51.0,2,
+CHUP-068___soft_tissue_mask.nii.gz,good,,CHUP-068,1,56.0,2,
+CHUP-069___soft_tissue_mask.nii.gz,good,,CHUP-069,1,78.0,2,
+CHUP-071___soft_tissue_mask.nii.gz,good,,CHUP-071,1,52.0,2,
+CHUP-072___soft_tissue_mask.nii.gz,good,,CHUP-072,0,66.0,2,
+CHUP-074___soft_tissue_mask.nii.gz,good,,CHUP-074,1,52.0,2,
+CHUS-003___soft_tissue_mask.nii.gz,good,,CHUS-003,0,51.0,3,
+CHUS-004___soft_tissue_mask.nii.gz,good,,CHUS-004,0,56.0,3,
+CHUS-006___soft_tissue_mask.nii.gz,good,,CHUS-006,0,69.0,3,
+CHUS-007___soft_tissue_mask.nii.gz,good,,CHUS-007,0,65.0,3,
+CHUS-008___soft_tissue_mask.nii.gz,good,,CHUS-008,1,70.0,3,
+CHUS-009___soft_tissue_mask.nii.gz,good,,CHUS-009,0,65.0,3,
+CHUS-021___soft_tissue_mask.nii.gz,good,,CHUS-021,1,56.0,3,
+CHUS-022___soft_tissue_mask.nii.gz,good,,CHUS-022,1,67.0,3,
+CHUS-033___soft_tissue_mask.nii.gz,good,,CHUS-033,1,71.0,3,
+CHUS-036___soft_tissue_mask.nii.gz,good,,CHUS-036,0,35.0,3,
+CHUS-038___soft_tissue_mask.nii.gz,good,,CHUS-038,1,68.0,3,
+CHUS-039___soft_tissue_mask.nii.gz,good,,CHUS-039,1,73.0,3,
+CHUS-040___soft_tissue_mask.nii.gz,good,,CHUS-040,0,76.0,3,
+CHUS-042___soft_tissue_mask.nii.gz,good,,CHUS-042,1,57.0,3,
+CHUS-043___soft_tissue_mask.nii.gz,good,,CHUS-043,1,34.0,3,
+CHUS-045___soft_tissue_mask.nii.gz,good,,CHUS-045,0,63.0,3,
+CHUS-046___soft_tissue_mask.nii.gz,good,,CHUS-046,1,69.0,3,
+CHUS-047___soft_tissue_mask.nii.gz,good,,CHUS-047,0,74.0,3,
+CHUS-048___soft_tissue_mask.nii.gz,good,,CHUS-048,0,50.0,3,
+CHUS-049___soft_tissue_mask.nii.gz,good,,CHUS-049,0,80.0,3,
+CHUS-050___soft_tissue_mask.nii.gz,good,,CHUS-050,0,52.0,3,
+CHUS-051___soft_tissue_mask.nii.gz,good,,CHUS-051,1,76.0,3,
+CHUS-052___soft_tissue_mask.nii.gz,good,,CHUS-052,1,58.0,3,
+CHUS-053___soft_tissue_mask.nii.gz,good,,CHUS-053,0,74.0,3,
+CHUS-056___soft_tissue_mask.nii.gz,good,,CHUS-056,1,66.0,3,
+CHUS-057___soft_tissue_mask.nii.gz,good,,CHUS-057,1,58.0,3,
+CHUS-058___soft_tissue_mask.nii.gz,good,,CHUS-058,0,68.0,3,
+CHUS-064___soft_tissue_mask.nii.gz,good,,CHUS-064,1,66.0,3,
+CHUS-066___soft_tissue_mask.nii.gz,good,,CHUS-066,1,62.0,3,
+CHUS-067___soft_tissue_mask.nii.gz,good,,CHUS-067,1,72.0,3,
+CHUS-069___soft_tissue_mask.nii.gz,good,,CHUS-069,0,48.0,3,
+CHUS-073___soft_tissue_mask.nii.gz,good,,CHUS-073,1,77.0,3,
+CHUS-074___soft_tissue_mask.nii.gz,good,,CHUS-074,1,62.0,3,
+CHUS-076___soft_tissue_mask.nii.gz,good,,CHUS-076,1,66.0,3,
+CHUS-077___soft_tissue_mask.nii.gz,good,,CHUS-077,0,41.0,3,
+CHUS-078___soft_tissue_mask.nii.gz,good,,CHUS-078,1,57.0,3,
+CHUS-080___soft_tissue_mask.nii.gz,good,,CHUS-080,0,53.0,3,
+CHUS-081___soft_tissue_mask.nii.gz,good,,CHUS-081,0,57.0,3,
+CHUS-085___soft_tissue_mask.nii.gz,good,,CHUS-085,1,60.0,3,
+CHUS-086___soft_tissue_mask.nii.gz,good,,CHUS-086,1,52.0,3,
+CHUS-087___soft_tissue_mask.nii.gz,good,,CHUS-087,1,60.0,3,
+CHUS-089___soft_tissue_mask.nii.gz,good,,CHUS-089,1,65.0,3,
+CHUS-090___soft_tissue_mask.nii.gz,good,,CHUS-090,1,71.0,3,
+CHUS-091___soft_tissue_mask.nii.gz,good,,CHUS-091,1,61.0,3,
+CHUS-094___soft_tissue_mask.nii.gz,good,,CHUS-094,1,59.0,3,
+CHUS-095___soft_tissue_mask.nii.gz,good,,CHUS-095,1,75.0,3,
+CHUS-096___soft_tissue_mask.nii.gz,good,,CHUS-096,1,67.0,3,
+CHUS-097___soft_tissue_mask.nii.gz,good,,CHUS-097,1,75.0,3,
+CHUS-098___soft_tissue_mask.nii.gz,good,,CHUS-098,1,61.0,3,
+CHUS-100___soft_tissue_mask.nii.gz,good,,CHUS-100,1,62.0,3,
+HGJ-008___soft_tissue_mask.nii.gz,good,,HGJ-008,1,61.0,6,
+HGJ-016___soft_tissue_mask.nii.gz,good,,HGJ-016,0,51.0,6,
+HGJ-018___soft_tissue_mask.nii.gz,good,,HGJ-018,0,56.0,6,
+HGJ-028___soft_tissue_mask.nii.gz,good,,HGJ-028,1,72.0,6,
+HGJ-029___soft_tissue_mask.nii.gz,good,,HGJ-029,0,59.0,6,
+HGJ-030___soft_tissue_mask.nii.gz,good,,HGJ-030,0,45.0,6,
+HGJ-032___soft_tissue_mask.nii.gz,good,,HGJ-032,0,49.0,6,
+HGJ-034___soft_tissue_mask.nii.gz,good,,HGJ-034,1,73.0,6,
+HGJ-038___soft_tissue_mask.nii.gz,good,,HGJ-038,1,64.0,6,
+HGJ-043___soft_tissue_mask.nii.gz,good,,HGJ-043,1,48.0,6,
+HGJ-057___soft_tissue_mask.nii.gz,good,,HGJ-057,0,60.0,6,
+HGJ-062___soft_tissue_mask.nii.gz,good,,HGJ-062,1,50.0,6,
+HGJ-067___soft_tissue_mask.nii.gz,good,,HGJ-067,1,64.0,6,
+HGJ-076___soft_tissue_mask.nii.gz,good,,HGJ-076,1,73.0,6,
+HGJ-081___soft_tissue_mask.nii.gz,good,,HGJ-081,1,74.0,6,
+HGJ-082___soft_tissue_mask.nii.gz,good,,HGJ-082,1,51.0,6,
+HGJ-087___soft_tissue_mask.nii.gz,good,,HGJ-087,1,64.0,6,
+HGJ-091___soft_tissue_mask.nii.gz,good,,HGJ-091,1,65.0,6,
+HMR-004___soft_tissue_mask.nii.gz,good,,HMR-004,1,66.0,7,
+HMR-016___soft_tissue_mask.nii.gz,good,,HMR-016,0,71.0,7,
+HMR-021___soft_tissue_mask.nii.gz,good,,HMR-021,1,63.0,7,
+HMR-024___soft_tissue_mask.nii.gz,good,,HMR-024,0,64.0,7,
+HMR-025___soft_tissue_mask.nii.gz,good,,HMR-025,1,58.0,7,
+HMR-029___soft_tissue_mask.nii.gz,good,,HMR-029,1,57.0,7,
+HMR-034___soft_tissue_mask.nii.gz,good,,HMR-034,0,85.0,7,
+MDA-001___soft_tissue_mask.nii.gz,good,,MDA-001,1,57.0,5,
+MDA-005___soft_tissue_mask.nii.gz,good,,MDA-005,1,55.0,5,
+MDA-015___soft_tissue_mask.nii.gz,good,,MDA-015,0,53.0,5,
+MDA-016___soft_tissue_mask.nii.gz,good,,MDA-016,1,46.0,5,
+MDA-032___soft_tissue_mask.nii.gz,good,,MDA-032,0,53.0,5,
+MDA-033___soft_tissue_mask.nii.gz,good,,MDA-033,1,54.0,5,
+MDA-035___soft_tissue_mask.nii.gz,good,,MDA-035,1,57.0,5,
+MDA-040___soft_tissue_mask.nii.gz,good,,MDA-040,1,60.0,5,
+MDA-052___soft_tissue_mask.nii.gz,good,,MDA-052,1,68.0,5,
+MDA-055___soft_tissue_mask.nii.gz,good,,MDA-055,1,54.0,5,
+MDA-056___soft_tissue_mask.nii.gz,good,,MDA-056,1,60.0,5,
+MDA-057___soft_tissue_mask.nii.gz,good,,MDA-057,1,55.0,5,
+MDA-063___soft_tissue_mask.nii.gz,good,,MDA-063,1,69.0,5,
+MDA-087___soft_tissue_mask.nii.gz,good,,MDA-087,1,71.0,5,
+MDA-090___soft_tissue_mask.nii.gz,good,,MDA-090,1,59.0,5,
+MDA-097___soft_tissue_mask.nii.gz,good,,MDA-097,1,59.0,5,
+MDA-101___soft_tissue_mask.nii.gz,good,,MDA-101,1,64.0,5,
+MDA-103___soft_tissue_mask.nii.gz,good,,MDA-103,1,75.0,5,
+MDA-104___soft_tissue_mask.nii.gz,good,,MDA-104,1,64.0,5,
+MDA-105___soft_tissue_mask.nii.gz,good,,MDA-105,1,32.0,5,
+MDA-107___soft_tissue_mask.nii.gz,good,,MDA-107,1,75.0,5,
+MDA-110___soft_tissue_mask.nii.gz,good,,MDA-110,1,64.0,5,
+MDA-112___soft_tissue_mask.nii.gz,good,,MDA-112,1,62.0,5,
+MDA-113___soft_tissue_mask.nii.gz,good,,MDA-113,1,66.0,5,
+MDA-117___soft_tissue_mask.nii.gz,good,,MDA-117,1,58.0,5,
+MDA-119___soft_tissue_mask.nii.gz,good,,MDA-119,1,66.0,5,
+MDA-120___soft_tissue_mask.nii.gz,good,,MDA-120,1,70.0,5,
+MDA-122___soft_tissue_mask.nii.gz,good,,MDA-122,1,70.0,5,
+MDA-124___soft_tissue_mask.nii.gz,good,,MDA-124,1,67.0,5,
+MDA-125___soft_tissue_mask.nii.gz,good,,MDA-125,1,60.0,5,
+MDA-126___soft_tissue_mask.nii.gz,good,,MDA-126,1,54.0,5,
+MDA-129___soft_tissue_mask.nii.gz,good,,MDA-129,1,81.0,5,
+MDA-133___soft_tissue_mask.nii.gz,good,,MDA-133,1,56.0,5,
+MDA-136___soft_tissue_mask.nii.gz,good,,MDA-136,1,55.0,5,
+MDA-144___soft_tissue_mask.nii.gz,good,,MDA-144,1,52.0,5,
+MDA-149___soft_tissue_mask.nii.gz,good,,MDA-149,1,48.0,5,
+MDA-152___soft_tissue_mask.nii.gz,good,,MDA-152,1,69.0,5,
+MDA-169___soft_tissue_mask.nii.gz,good,,MDA-169,1,47.0,5,
+MDA-170___soft_tissue_mask.nii.gz,good,,MDA-170,1,60.0,5,
+MDA-176___soft_tissue_mask.nii.gz,good,,MDA-176,1,63.0,5,
+MDA-188___soft_tissue_mask.nii.gz,good,,MDA-188,1,49.0,5,
+MDA-189___soft_tissue_mask.nii.gz,good,,MDA-189,1,58.0,5,
+MDA-202___soft_tissue_mask.nii.gz,good,,MDA-202,0,71.0,5,
+MDA-204___soft_tissue_mask.nii.gz,good,,MDA-204,1,50.0,5,
+MDA-208___soft_tissue_mask.nii.gz,good,,MDA-208,1,55.0,5,
+MDA-211___soft_tissue_mask.nii.gz,good,,MDA-211,0,61.0,5,
+MDA-212___soft_tissue_mask.nii.gz,good,,MDA-212,1,59.0,5,
+MDA-218___soft_tissue_mask.nii.gz,good,,MDA-218,1,63.0,5,
+MDA-221___soft_tissue_mask.nii.gz,good,,MDA-221,1,51.0,5,
+MDA-228___soft_tissue_mask.nii.gz,good,,MDA-228,0,47.0,5,
+MDA-240___soft_tissue_mask.nii.gz,good,,MDA-240,1,52.0,5,
+MDA-246___soft_tissue_mask.nii.gz,good,,MDA-246,0,63.0,5,
+MDA-248___soft_tissue_mask.nii.gz,good,,MDA-248,0,56.0,5,
+MDA-249___soft_tissue_mask.nii.gz,good,,MDA-249,1,76.0,5,
+MDA-265___soft_tissue_mask.nii.gz,good,,MDA-265,0,50.0,5,
+MDA-270___soft_tissue_mask.nii.gz,good,,MDA-270,1,55.0,5,
+MDA-280___soft_tissue_mask.nii.gz,good,,MDA-280,1,62.0,5,
+MDA-286___soft_tissue_mask.nii.gz,good,,MDA-286,0,58.0,5,
+MDA-287___soft_tissue_mask.nii.gz,good,,MDA-287,1,56.0,5,
+MDA-295___soft_tissue_mask.nii.gz,good,,MDA-295,1,57.0,5,
+MDA-296___soft_tissue_mask.nii.gz,good,,MDA-296,0,32.0,5,
+MDA-302___soft_tissue_mask.nii.gz,good,,MDA-302,1,66.0,5,
+MDA-303___soft_tissue_mask.nii.gz,good,,MDA-303,1,66.0,5,
+MDA-306___soft_tissue_mask.nii.gz,good,,MDA-306,1,60.0,5,
+MDA-312___soft_tissue_mask.nii.gz,good,,MDA-312,1,53.0,5,
+MDA-313___soft_tissue_mask.nii.gz,good,,MDA-313,0,61.0,5,
+MDA-318___soft_tissue_mask.nii.gz,good,,MDA-318,1,66.0,5,
+MDA-320___soft_tissue_mask.nii.gz,good,,MDA-320,1,47.0,5,
+MDA-325___soft_tissue_mask.nii.gz,good,,MDA-325,1,42.0,5,
+MDA-333___soft_tissue_mask.nii.gz,good,,MDA-333,1,65.0,5,
+MDA-339___soft_tissue_mask.nii.gz,good,,MDA-339,1,51.0,5,
+MDA-346___soft_tissue_mask.nii.gz,good,,MDA-346,0,69.0,5,
+MDA-348___soft_tissue_mask.nii.gz,good,,MDA-348,1,61.0,5,
+MDA-354___soft_tissue_mask.nii.gz,good,,MDA-354,1,43.0,5,
+MDA-355___soft_tissue_mask.nii.gz,good,,MDA-355,1,62.0,5,
+MDA-372___soft_tissue_mask.nii.gz,good,,MDA-372,1,48.0,5,
+MDA-379___soft_tissue_mask.nii.gz,good,,MDA-379,1,39.0,5,
+MDA-381___soft_tissue_mask.nii.gz,good,,MDA-381,1,53.0,5,
+USZ-003___soft_tissue_mask.nii.gz,good,,USZ-003,1,57.9,8,
+USZ-004___soft_tissue_mask.nii.gz,good,,USZ-004,1,61.8,8,
+USZ-005___soft_tissue_mask.nii.gz,good,,USZ-005,1,69.5,8,
+USZ-008___soft_tissue_mask.nii.gz,good,,USZ-008,1,66.0,8,
+CHUM-010___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-010,1,57.0,1,['one pressed ear']
+CHUM-013___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-013,0,67.0,1,['one pressed ear']
+CHUM-015___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-015,1,59.0,1,['one pressed ear']
+CHUM-017___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-017,1,77.0,1,['one pressed ear']
+CHUM-019___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-019,1,62.0,1,['one pressed ear']
+CHUM-021___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-021,1,63.0,1,['one pressed ear']
+CHUM-024___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-024,1,59.0,1,['one pressed ear']
+CHUM-027___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-027,0,69.0,1,['one pressed ear']
+CHUM-038___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-038,1,44.0,1,['one pressed ear']
+CHUM-040___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-040,1,71.0,1,['one pressed ear']
+CHUM-041___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-041,1,64.0,1,['one pressed ear']
+CHUM-043___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-043,1,58.0,1,['one pressed ear']
+CHUM-054___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUM-054,1,70.0,1,['one pressed ear']
+CHUM-060___soft_tissue_mask.nii.gz,artifact,one ear pressed,CHUM-060,1,48.0,1,['one pressed ear']
+CHUP-000___soft_tissue_mask.nii.gz,artifact,one ear pressed,CHUP-000,1,76.0,2,['one pressed ear']
+CHUP-013___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-013,1,48.0,2,['one pressed ear']
+CHUP-015___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-015,0,49.0,2,['one pressed ear']
+CHUP-016___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-016,1,65.0,2,['one pressed ear']
+CHUP-019___soft_tissue_mask.nii.gz,artifact,one deformed ear,CHUP-019,1,58.0,2,['one deformed ear']
+CHUP-024___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-024,1,57.0,2,['one pressed ear']
+CHUP-035___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-035,1,50.0,2,['one pressed ear']
+CHUP-038___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-038,1,57.0,2,['one pressed ear']
+CHUP-048___soft_tissue_mask.nii.gz,artifact,one cropped ear,CHUP-048,1,50.0,2,['one cropped ear']
+CHUP-058___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-058,1,73.0,2,['one pressed ear']
+CHUP-059___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-059,1,51.0,2,['one pressed ear']
+CHUP-067___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-067,0,64.0,2,['one pressed ear']
+CHUP-073___soft_tissue_mask.nii.gz,artifact,one cropped ear,CHUP-073,1,69.0,2,['one cropped ear']
+CHUP-075___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUP-075,0,66.0,2,['one pressed ear']
+CHUS-005___soft_tissue_mask.nii.gz,artifact,box,CHUS-005,1,63.0,3,['box']
+CHUS-010___soft_tissue_mask.nii.gz,artifact,box,CHUS-010,1,70.0,3,['box']
+CHUS-013___soft_tissue_mask.nii.gz,artifact,box,CHUS-013,1,58.0,3,['box']
+CHUS-015___soft_tissue_mask.nii.gz,artifact,box,CHUS-015,0,78.0,3,['box']
+CHUS-016___soft_tissue_mask.nii.gz,artifact,box,CHUS-016,1,67.0,3,['box']
+CHUS-019___soft_tissue_mask.nii.gz,artifact,box,CHUS-019,0,64.0,3,['box']
+CHUS-020___soft_tissue_mask.nii.gz,artifact,box,CHUS-020,1,54.0,3,['box']
+CHUS-026___soft_tissue_mask.nii.gz,artifact,box,CHUS-026,1,53.0,3,['box']
+CHUS-027___soft_tissue_mask.nii.gz,artifact,box,CHUS-027,1,52.0,3,['box']
+CHUS-028___soft_tissue_mask.nii.gz,artifact,box,CHUS-028,0,63.0,3,['box']
+CHUS-030___soft_tissue_mask.nii.gz,artifact,box,CHUS-030,1,77.0,3,['box']
+CHUS-031___soft_tissue_mask.nii.gz,artifact,box,CHUS-031,1,65.0,3,['box']
+CHUS-035___soft_tissue_mask.nii.gz,artifact,box,CHUS-035,1,53.0,3,['box']
+CHUS-041___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUS-041,1,58.0,3,['one pressed ear']
+CHUS-060___soft_tissue_mask.nii.gz,artifact,box,CHUS-060,1,48.0,3,['box']
+CHUS-061___soft_tissue_mask.nii.gz,artifact,one pressed ear,CHUS-061,1,54.0,3,['one pressed ear']
+CHUS-065___soft_tissue_mask.nii.gz,artifact,ears good but box around head,CHUS-065,1,65.0,3,['box']
+CHUS-068___soft_tissue_mask.nii.gz,artifact,ears good but box around head,CHUS-068,1,62.0,3,['box']
+CHUS-083___soft_tissue_mask.nii.gz,artifact,ears good but box around head,CHUS-083,1,71.0,3,['box']
+CHUS-088___soft_tissue_mask.nii.gz,artifact,one ear pressed,CHUS-088,0,77.0,3,['one pressed ear']
+HGJ-010___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-010,0,79.0,6,['one pressed ear']
+HGJ-015___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-015,0,56.0,6,['one pressed ear']
+HGJ-025___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-025,1,65.0,6,['one pressed ear']
+HGJ-026___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-026,1,79.0,6,['one pressed ear']
+HGJ-035___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-035,1,64.0,6,['one pressed ear']
+HGJ-039___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-039,1,48.0,6,['one pressed ear']
+HGJ-046___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-046,1,69.0,6,['one pressed ear']
+HGJ-048___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-048,1,53.0,6,['one pressed ear']
+HGJ-050___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-050,1,57.0,6,['one pressed ear']
+HGJ-052___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-052,0,77.0,6,['one pressed ear']
+HGJ-053___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-053,1,81.0,6,['one pressed ear']
+HGJ-066___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-066,1,56.0,6,['one pressed ear']
+HGJ-069___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-069,1,58.0,6,['one pressed ear']
+HGJ-070___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-070,1,47.0,6,['one pressed ear']
+HGJ-071___soft_tissue_mask.nii.gz,artifact,"one ear pressed, weird lobules",HGJ-071,1,69.0,6,"['one pressed ear', 'lobules/fat']"
+HGJ-072___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-072,1,62.0,6,['one pressed ear']
+HGJ-077___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-077,1,64.0,6,['one pressed ear']
+HGJ-085___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-085,1,67.0,6,['one pressed ear']
+HGJ-089___soft_tissue_mask.nii.gz,artifact,mass on to of one ear,HGJ-089,1,66.0,6,['one deformed ear']
+HGJ-090___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-090,1,53.0,6,['one pressed ear']
+HGJ-092___soft_tissue_mask.nii.gz,artifact,one ear pressed,HGJ-092,1,53.0,6,['one pressed ear']
+HMR-001___soft_tissue_mask.nii.gz,artifact,ears good but box around head,HMR-001,1,54.0,7,['box']
+HMR-011___soft_tissue_mask.nii.gz,artifact,one ear pressed,HMR-011,1,76.0,7,['one pressed ear']
+HMR-012___soft_tissue_mask.nii.gz,artifact,"one ear cropped, box around head",HMR-012,1,81.0,7,['box']
+HMR-013___soft_tissue_mask.nii.gz,artifact,"ears cropped, box around head",HMR-013,1,76.0,7,['box']
+HMR-023___soft_tissue_mask.nii.gz,artifact,"one ear pressed, weird lobules",HMR-023,1,51.0,7,"['one pressed ear', 'lobules/fat']"
+HMR-040___soft_tissue_mask.nii.gz,artifact,one ear pressed,HMR-040,0,61.0,7,['one pressed ear']
+MDA-014___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-014,1,65.0,5,['one pressed ear']
+MDA-034___soft_tissue_mask.nii.gz,artifact," scanner, one ear pressed",MDA-034,1,59.0,5,"['scanner', 'one pressed ear']"
+MDA-036___soft_tissue_mask.nii.gz,artifact,"one pressed ear, dotted blanket",MDA-036,0,55.0,5,"['blanket', 'one pressed ear']"
+MDA-041___soft_tissue_mask.nii.gz,artifact,one deformed ear,MDA-041,1,71.0,5,['one deformed ear']
+MDA-043___soft_tissue_mask.nii.gz,artifact,"scanner, one pressed ear",MDA-043,1,55.0,5,"['scanner', 'one pressed ear']"
+MDA-046___soft_tissue_mask.nii.gz,artifact,"scanner, one deformed ear",MDA-046,1,54.0,5,"['one deformed ear', 'scanner']"
+MDA-050___soft_tissue_mask.nii.gz,artifact,"scanner, one pressed ear",MDA-050,1,59.0,5,"['scanner', 'one pressed ear']"
+MDA-051___soft_tissue_mask.nii.gz,artifact, one pressed ear,MDA-051,0,62.0,5,['one pressed ear']
+MDA-053___soft_tissue_mask.nii.gz,artifact,one ear pressed,MDA-053,1,59.0,5,['one pressed ear']
+MDA-054___soft_tissue_mask.nii.gz,artifact,"scanner, one pressed ear",MDA-054,1,59.0,5,"['scanner', 'one pressed ear']"
+MDA-059___soft_tissue_mask.nii.gz,artifact, one deformed ear,MDA-059,1,56.0,5,['one deformed ear']
+MDA-069___soft_tissue_mask.nii.gz,artifact,"scanner, one deformed ear",MDA-069,1,57.0,5,"['one deformed ear', 'scanner']"
+MDA-070___soft_tissue_mask.nii.gz,artifact,"scanner, one deformed ear",MDA-070,1,54.0,5,"['one deformed ear', 'scanner']"
+MDA-071___soft_tissue_mask.nii.gz,artifact,weird lobules,MDA-071,1,54.0,5,['lobules/fat']
+MDA-075___soft_tissue_mask.nii.gz,artifact,one deformed ear,MDA-075,1,69.0,5,['one deformed ear']
+MDA-076___soft_tissue_mask.nii.gz,artifact, one pressed ear,MDA-076,0,60.0,5,['one pressed ear']
+MDA-080___soft_tissue_mask.nii.gz,artifact," scanner, one deformed ear",MDA-080,1,51.0,5,"['one deformed ear', 'scanner']"
+MDA-091___soft_tissue_mask.nii.gz,artifact, one deformed ear,MDA-091,1,54.0,5,['one deformed ear']
+MDA-092___soft_tissue_mask.nii.gz,artifact,weird lobules,MDA-092,1,59.0,5,['lobules/fat']
+MDA-093___soft_tissue_mask.nii.gz,artifact,"scanner, cropped ear",MDA-093,1,58.0,5,['scanner']
+MDA-095___soft_tissue_mask.nii.gz,artifact," scanner, one deformed ear",MDA-095,1,45.0,5,"['one deformed ear', 'scanner']"
+MDA-096___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-096,0,69.0,5,['one pressed ear']
+MDA-098___soft_tissue_mask.nii.gz,artifact, one pressed ear,MDA-098,1,67.0,5,['one pressed ear']
+MDA-102___soft_tissue_mask.nii.gz,artifact," one pressed ear, scanner",MDA-102,1,64.0,5,"['scanner', 'one pressed ear']"
+MDA-106___soft_tissue_mask.nii.gz,artifact, one pressed ear,MDA-106,1,49.0,5,['one pressed ear']
+MDA-109___soft_tissue_mask.nii.gz,artifact," scanner, one ear pressed",MDA-109,1,48.0,5,"['scanner', 'one pressed ear']"
+MDA-118___soft_tissue_mask.nii.gz,artifact, one pressed ear,MDA-118,1,65.0,5,['one pressed ear']
+MDA-128___soft_tissue_mask.nii.gz,artifact,"weird lobules, box",MDA-128,1,46.0,5,"['box', 'lobules/fat']"
+MDA-153___soft_tissue_mask.nii.gz,artifact,ears good but box around head,MDA-153,1,71.0,5,['box']
+MDA-156___soft_tissue_mask.nii.gz,artifact," scanner, one pressed ear",MDA-156,1,55.0,5,"['scanner', 'one pressed ear']"
+MDA-160___soft_tissue_mask.nii.gz,artifact," scanner, one pressed ear",MDA-160,1,66.0,5,"['scanner', 'one pressed ear']"
+MDA-161___soft_tissue_mask.nii.gz,artifact,"scanner, ears pressed",MDA-161,1,65.0,5,['scanner']
+MDA-162___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-162,1,72.0,5,['one pressed ear']
+MDA-166___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-166,1,50.0,5,['one pressed ear']
+MDA-175___soft_tissue_mask.nii.gz,artifact,scanner,MDA-175,1,55.0,5,['scanner']
+MDA-180___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-180,1,54.0,5,['one pressed ear']
+MDA-186___soft_tissue_mask.nii.gz,artifact,"scanner, one deformed ear",MDA-186,1,53.0,5,"['one deformed ear', 'scanner']"
+MDA-194___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-194,1,51.0,5,['one pressed ear']
+MDA-201___soft_tissue_mask.nii.gz,artifact,scanner,MDA-201,0,54.0,5,['scanner']
+MDA-205___soft_tissue_mask.nii.gz,artifact,one deformed ear,MDA-205,1,71.0,5,['one deformed ear']
+MDA-219___soft_tissue_mask.nii.gz,artifact,"scanner, presssed ears",MDA-219,1,50.0,5,['scanner']
+MDA-223___soft_tissue_mask.nii.gz,artifact,"box, one cropped ear",MDA-223,1,44.0,5,"['box', 'one cropped ear']"
+MDA-235___soft_tissue_mask.nii.gz,artifact,"box, scanner",MDA-235,1,70.0,5,"['box', 'scanner']"
+MDA-237___soft_tissue_mask.nii.gz,artifact,scanner,MDA-237,1,57.0,5,['scanner']
+MDA-244___soft_tissue_mask.nii.gz,artifact,"box, scanner",MDA-244,1,59.0,5,"['box', 'scanner']"
+MDA-250___soft_tissue_mask.nii.gz,artifact,one deformed ear,MDA-250,0,55.0,5,['one deformed ear']
+MDA-253___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-253,1,48.0,5,['one pressed ear']
+MDA-259___soft_tissue_mask.nii.gz,artifact,scanner,MDA-259,1,68.0,5,['scanner']
+MDA-262___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-262,1,48.0,5,['one pressed ear']
+MDA-272___soft_tissue_mask.nii.gz,artifact,"pressed ear, scanner",MDA-272,1,52.0,5,['scanner']
+MDA-275___soft_tissue_mask.nii.gz,artifact,scanner,MDA-275,1,47.0,5,['scanner']
+MDA-277___soft_tissue_mask.nii.gz,artifact,scanner,MDA-277,1,53.0,5,['scanner']
+MDA-279___soft_tissue_mask.nii.gz,artifact,"scanner, one pressed ear",MDA-279,1,75.0,5,"['scanner', 'one pressed ear']"
+MDA-281___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-281,1,66.0,5,['one pressed ear']
+MDA-285___soft_tissue_mask.nii.gz,artifact,box,MDA-285,1,66.0,5,['box']
+MDA-290___soft_tissue_mask.nii.gz,artifact,scanner,MDA-290,1,54.0,5,['scanner']
+MDA-294___soft_tissue_mask.nii.gz,artifact,one deformed ear,MDA-294,1,77.0,5,['one deformed ear']
+MDA-304___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-304,1,59.0,5,['one pressed ear']
+MDA-307___soft_tissue_mask.nii.gz,artifact,"scanner, one pressed ear",MDA-307,1,77.0,5,"['scanner', 'one pressed ear']"
+MDA-308___soft_tissue_mask.nii.gz,artifact,"scanner, one deformed ear",MDA-308,1,53.0,5,"['one deformed ear', 'scanner']"
+MDA-321___soft_tissue_mask.nii.gz,artifact,"scanner, one pressed ear",MDA-321,1,68.0,5,"['scanner', 'one pressed ear']"
+MDA-323___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-323,1,51.0,5,['one pressed ear']
+MDA-324___soft_tissue_mask.nii.gz,artifact,"scanner, one pressed ear",MDA-324,1,60.0,5,"['scanner', 'one pressed ear']"
+MDA-347___soft_tissue_mask.nii.gz,artifact,"scanner, one deformed ear",MDA-347,1,60.0,5,"['one deformed ear', 'scanner']"
+MDA-351___soft_tissue_mask.nii.gz,artifact,"box, one pressed ear",MDA-351,0,61.0,5,"['box', 'one pressed ear']"
+MDA-358___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-358,1,56.0,5,['one pressed ear']
+MDA-369___soft_tissue_mask.nii.gz,artifact,"scanner, one pressed ear",MDA-369,1,72.0,5,"['scanner', 'one pressed ear']"
+MDA-374___soft_tissue_mask.nii.gz,artifact,scanner,MDA-374,1,70.0,5,['scanner']
+MDA-377___soft_tissue_mask.nii.gz,artifact,scanner,MDA-377,1,52.0,5,['scanner']
+MDA-378___soft_tissue_mask.nii.gz,artifact,scanner,MDA-378,0,50.0,5,['scanner']
+MDA-380___soft_tissue_mask.nii.gz,artifact,one pressed ear,MDA-380,1,50.0,5,['one pressed ear']
+MDA-383___soft_tissue_mask.nii.gz,artifact,"scanner, one ear pressed",MDA-383,1,61.0,5,"['scanner', 'one pressed ear']"
+MDA-385___soft_tissue_mask.nii.gz,artifact,one ear pressed,MDA-385,1,57.0,5,['one pressed ear']
+MDA-390___soft_tissue_mask.nii.gz,artifact, one ear deformed,MDA-390,1,53.0,5,['one deformed ear']
+MDA-391___soft_tissue_mask.nii.gz,artifact,ears good but box around head,MDA-391,1,62.0,5,['box']
+MDA-398___soft_tissue_mask.nii.gz,artifact,one deformed ear,MDA-398,1,70.0,5,['one deformed ear']
+MDA-399___soft_tissue_mask.nii.gz,artifact,"one deformed ear, scannner",MDA-399,1,67.0,5,['one deformed ear']
+MDA-401___soft_tissue_mask.nii.gz,artifact,scanner,MDA-401,1,54.0,5,['scanner']
+USZ-001___soft_tissue_mask.nii.gz,artifact,"scanner, one cropped ear",USZ-001,1,59.7,8,"['scanner', 'one cropped ear']"
+USZ-002___soft_tissue_mask.nii.gz,artifact,"scanner, weird lobules",USZ-002,1,63.9,8,"['scanner', 'lobules/fat']"
+USZ-006___soft_tissue_mask.nii.gz,artifact,ears good but box around head,USZ-006,1,75.7,8,['box']
+USZ-007___soft_tissue_mask.nii.gz,artifact,"one ear pressed, box around head",USZ-007,1,61.2,8,"['box', 'one pressed ear']"
+USZ-009___soft_tissue_mask.nii.gz,artifact,scanner,USZ-009,0,47.2,8,['scanner']
+USZ-010___soft_tissue_mask.nii.gz,artifact,"one ear pressed, box around head",USZ-010,1,50.6,8,"['box', 'one pressed ear']"
+USZ-011___soft_tissue_mask.nii.gz,artifact,ears good but box around head,USZ-011,1,54.7,8,['box']

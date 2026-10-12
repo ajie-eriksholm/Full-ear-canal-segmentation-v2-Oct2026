@@ -3,7 +3,10 @@ tmp.*
 __pycache__/
 GridLauncher/
 *.csv
+!resources/*.csv
 Debug*
 *embeddings*
 *migration*
 qsub*
+# Too large for plain git (>100MB GitHub limit); kept on disk, not version-controlled
+models/tissue_air/

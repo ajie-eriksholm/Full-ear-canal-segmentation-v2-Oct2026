@@ -1,12 +1,12 @@
 #!/bin/bash
-#$ -N batch6_TRYHN                  # Job name
+#$ -N HN                  # Job name
 #$ -cwd                                # Run in current working directory
 #$ -l nvgpu=1                          # Request 1 NVIDIA GPU
 #$ -l gputype=rtx*                     # Request RTX series GPU
 #$ -l cores=8                         # Request 16 CPU cores
 #$ -l mem_free=64G                     # Request 64 GB of RAM
-#$ -o full_pipeline_highres_TRYHN6.log             # Standard output log
-#$ -e full_pipeline_highres_TRYHN6_err.log         # Standard error log
+#$ -o full_pipeline.log             # Standard output log
+#$ -e full_pipeline.err.log         # Standard error log
 
 # ==============================================================================
 # Full Pipeline: Preprocessing -> Inference -> Postprocessing
@@ -23,6 +23,7 @@
 #   P2 (landmark_env) - Landmark detection and Frankfort plane alignment
 #   P3 (landmark_env) - ROI cropping around ear landmarks
 #   P4 (landmark_env) - Upsampling and normalization for inference
+#   Eardrum pre-processing
 #   Inference Tissue   - 3D U-Net tissue vs air segmentation and landmark prediction
 #   Inference Bone     - nnU-Net bone segmentation
 #   Postprocessing     - Markup JSONs, NIfTI masks, and STL generation
@@ -34,7 +35,7 @@
 # ==============================================================================
 
 # --- Directory paths ---
-RAW_SCANS_DIR="/projects/oticon/erhdata/Processed-Data/AJIE/Pre-processed_CT_annotations/Head-Neck-CBCT-CT/all_raw_ct"
+RAW_SCANS_DIR="/projects/oticon/erhdata/Processed-Data/AJIE/Pre-processed_CT_annotations/Head-Neck-CBCT-CT/all_raw"
 PROCESSED_SCANS_DIR="/projects/oticon/erhdata/Processed-Data/AJIE/Pre-processed_CT_annotations/Head-Neck-CBCT-CT/Processed-Data"
 OUTPUT_DIR="/projects/oticon/erhdata/Processed-Data/AJIE/Pre-processed_CT_annotations/Head-Neck-CBCT-CT/Output"
 
@@ -45,23 +46,23 @@ MAP_TO_ORIGINAL="True"       # Set to "False" to skip mapping results back to or
 EXPORT_SLICER_MARKUPS="True" # Set to "True" to also export landmarks as 3D Slicer markups (.mrk.json)
 
 # --- Python environments ---
-SEG_ENV="/home/sbeo/Full-ear-canal-segmentation/seg_env"           # For P1
-LANDMARK_ENV="/home/sbeo/Full-ear-canal-segmentation/landmark_env" # For P2, P3, P4, inference, postprocessing
+SEG_ENV="$HOME/code/Full-ear-canal-segmentation/seg_env"           # For P1
+LANDMARK_ENV="$HOME/code/Full-ear-canal-segmentation/landmark_env" # For P2, P3, P4, inference, postprocessing
 METRIC_ENV="/home/ajie/.conda/envs/metric_env"                    # For metric extraction (activate by path: avoids ambiguity with other users' same-named envs)
 
 # --- Landmark detection model (for P2) ---
-LANDMARK_MODEL="/projects/oticon/erhdata/Processed-Data/SBEO/High-quality-scans/best_model_2025-12-05_13-16-35.pth"
+LANDMARK_MODEL="$HOME/code/Full-ear-canal-segmentation/models/landmark_detection/best_model_2025-12-05_13-16-35.pth"
 
 # --- Quality assessment filter (for P1) ---
-ACCEPTABLE_PATIENTID_CSV="/projects/oticon/erhdata/Processed-Data/SBEO/Final_pipeline/acceptable_patientid.csv"
+ACCEPTABLE_PATIENTID_CSV="$HOME/code/Full-ear-canal-segmentation/resources/acceptable_patientid.csv"
 PRE_QUALITY_ASSESSED="False"  # Set to "True" to only process scans in acceptable_patientid_csv
 
 # --- Excluded scans (for P3) ---
-EXCLUDED_SCANS_CSV="/projects/oticon/erhdata/Processed-Data/SBEO/High-quality-scans/Excluded_scans_cropping.csv"
+EXCLUDED_SCANS_CSV="$HOME/code/Full-ear-canal-segmentation/resources/Excluded_scans_cropping.csv"
 
 # --- Inference configuration ---
 # Directory containing trained model logs (each run has a best_model.pth inside)
-INFERENCE_LOGS_DIR="/projects/oticon/erhdata/Processed-Data/SBEO/Retrain_Tissue_Air/Logs"
+INFERENCE_LOGS_DIR="$HOME/code/Full-ear-canal-segmentation/models/tissue_air"
 
 # Which model run to use for postprocessing (the predictions from this run
 # will be passed to the postprocessing step)
@@ -72,7 +73,6 @@ NNUNET_RAW="/projects/oticon/erhdata/Processed-Data/AJIE/nnunet/nnUNet_raw"
 NNUNET_PREPROCESSED="/projects/oticon/erhdata/Processed-Data/AJIE/nnunet/nnUNet_preprocessed"
 NNUNET_RESULTS="/projects/oticon/erhdata/Processed-Data/AJIE/nnunet/nnUNet_results"
 NNUNET_DATASET_ID=1
-
 
 
 # Anchor to the repo root so paths work both locally and under qsub
@@ -325,7 +325,7 @@ echo "[OK] P4 preprocessing completed successfully"
 echo ""
 
 # ==============================================================================
-# STEP 5: Eardrum-centered high-resolution preprocessing (auxiliary track)
+# STEP 5: Eardrum-centered high-resolution preprocessing 
 # ==============================================================================
 echo "=================================================="
 echo "STEP 5/10: Running Eardrum Preprocessing"

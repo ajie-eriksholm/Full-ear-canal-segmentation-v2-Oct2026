@@ -26,18 +26,18 @@ NO_EYES="True"              # Set to "True" if scans don't include eyes
 SKIP_ALIGNMENT="False"       # Set to "True" to skip alignment step
 
 # Python environments
-SEG_ENV="/home/sbeo/Full-ear-canal-segmentation/seg_env"           # For P1
-LANDMARK_ENV="/home/sbeo/Full-ear-canal-segmentation/landmark_env" # For P2, P3, P4
+SEG_ENV="$HOME/code/Full-ear-canal-segmentation/seg_env"           # For P1
+LANDMARK_ENV="$HOME/code/Full-ear-canal-segmentation/landmark_env" # For P2, P3, P4
 
 # Landmark detection model (for P2)
-LANDMARK_MODEL="/projects/oticon/erhdata/Processed-Data/SBEO/High-quality-scans/best_model_2025-12-05_13-16-35.pth"
+LANDMARK_MODEL="$HOME/code/Full-ear-canal-segmentation/models/landmark_detection/best_model_2025-12-05_13-16-35.pth"
 
 # Quality assessment filter (for P1)
-ACCEPTABLE_PATIENTID_CSV="/projects/oticon/erhdata/Processed-Data/SBEO/Final_pipeline/acceptable_patientid.csv"
+ACCEPTABLE_PATIENTID_CSV="$HOME/code/Full-ear-canal-segmentation/resources/acceptable_patientid.csv"
 PRE_QUALITY_ASSESSED="False"  # Set to "True" to only process scans in acceptable_patientid_csv
 
 # Excluded scans (for P3)
-EXCLUDED_SCANS_CSV="/projects/oticon/erhdata/Processed-Data/SBEO/High-quality-scans/Excluded_scans_cropping.csv"
+EXCLUDED_SCANS_CSV="$HOME/code/Full-ear-canal-segmentation/resources/Excluded_scans_cropping.csv"
 
 # ==============================================================================
 # DO NOT EDIT BELOW THIS LINE (unless you know what you're doing)
