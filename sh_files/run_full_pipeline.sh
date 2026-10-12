@@ -73,9 +73,7 @@ NNUNET_PREPROCESSED="/projects/oticon/erhdata/Processed-Data/AJIE/nnunet/nnUNet_
 NNUNET_RESULTS="/projects/oticon/erhdata/Processed-Data/AJIE/nnunet/nnUNet_results"
 NNUNET_DATASET_ID=1
 
-# ==============================================================================
-# DO NOT EDIT BELOW THIS LINE (unless you know what you're doing)
-# ==============================================================================
+
 
 # Anchor to the repo root so paths work both locally and under qsub
 PROJECT_ROOT="$HOME/code/Full-ear-canal-segmentation" # CHANGE
