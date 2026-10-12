@@ -34,6 +34,9 @@
 # CONFIGURATION - Edit these variables as needed
 # ==============================================================================
 
+# --- Repo location (EDIT THIS to where you cloned the repo) ---
+PROJECT_ROOT="$HOME/code/Full-ear-canal-segmentation"
+
 # --- Directory paths ---
 RAW_SCANS_DIR="/projects/oticon/erhdata/Processed-Data/AJIE/Pre-processed_CT_annotations/Head-Neck-CBCT-CT/all_raw"
 PROCESSED_SCANS_DIR="/projects/oticon/erhdata/Processed-Data/AJIE/Pre-processed_CT_annotations/Head-Neck-CBCT-CT/Processed-Data"
@@ -46,23 +49,23 @@ MAP_TO_ORIGINAL="True"       # Set to "False" to skip mapping results back to or
 EXPORT_SLICER_MARKUPS="True" # Set to "True" to also export landmarks as 3D Slicer markups (.mrk.json)
 
 # --- Python environments ---
-SEG_ENV="$HOME/code/Full-ear-canal-segmentation/seg_env"           # For P1
-LANDMARK_ENV="$HOME/code/Full-ear-canal-segmentation/landmark_env" # For P2, P3, P4, inference, postprocessing
-METRIC_ENV="/home/ajie/.conda/envs/metric_env"                    # For metric extraction (activate by path: avoids ambiguity with other users' same-named envs)
+SEG_ENV="$PROJECT_ROOT/seg_env"           # For P1
+LANDMARK_ENV="$PROJECT_ROOT/landmark_env" # For P2, P3, P4, inference, postprocessing
+METRIC_ENV="$HOME/.conda/envs/metric_env"                    # For metric extraction (activate by path: avoids ambiguity with other users' same-named envs)
 
 # --- Landmark detection model (for P2) ---
-LANDMARK_MODEL="$HOME/code/Full-ear-canal-segmentation/models/landmark_detection/best_model_2025-12-05_13-16-35.pth"
+LANDMARK_MODEL="$PROJECT_ROOT/models/landmark_detection/best_model_2025-12-05_13-16-35.pth"
 
 # --- Quality assessment filter (for P1) ---
-ACCEPTABLE_PATIENTID_CSV="$HOME/code/Full-ear-canal-segmentation/resources/acceptable_patientid.csv"
+ACCEPTABLE_PATIENTID_CSV="$PROJECT_ROOT/resources/acceptable_patientid.csv"
 PRE_QUALITY_ASSESSED="False"  # Set to "True" to only process scans in acceptable_patientid_csv
 
 # --- Excluded scans (for P3) ---
-EXCLUDED_SCANS_CSV="$HOME/code/Full-ear-canal-segmentation/resources/Excluded_scans_cropping.csv"
+EXCLUDED_SCANS_CSV="$PROJECT_ROOT/resources/Excluded_scans_cropping.csv"
 
 # --- Inference configuration ---
 # Directory containing trained model logs (each run has a best_model.pth inside)
-INFERENCE_LOGS_DIR="$HOME/code/Full-ear-canal-segmentation/models/tissue_air"
+INFERENCE_LOGS_DIR="$PROJECT_ROOT/models/tissue_air"
 
 # Which model run to use for postprocessing (the predictions from this run
 # will be passed to the postprocessing step)
@@ -74,9 +77,6 @@ NNUNET_PREPROCESSED="/projects/oticon/erhdata/Processed-Data/AJIE/nnunet/nnUNet_
 NNUNET_RESULTS="/projects/oticon/erhdata/Processed-Data/AJIE/nnunet/nnUNet_results"
 NNUNET_DATASET_ID=1
 
-
-# Anchor to the repo root so paths work both locally and under qsub
-PROJECT_ROOT="$HOME/code/Full-ear-canal-segmentation" # CHANGE
 cd "$PROJECT_ROOT"
 
 # Script locations
