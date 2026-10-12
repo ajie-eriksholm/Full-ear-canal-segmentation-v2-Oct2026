@@ -78,8 +78,7 @@ NNUNET_DATASET_ID=1
 # ==============================================================================
 
 # Anchor to the repo root so paths work both locally and under qsub
-# (under SGE, BASH_SOURCE points to the spool copy of this script).
-PROJECT_ROOT="$HOME/code/Full-ear-canal-segmentation"
+PROJECT_ROOT="$HOME/code/Full-ear-canal-segmentation" # CHANGE
 cd "$PROJECT_ROOT"
 
 # Script locations
